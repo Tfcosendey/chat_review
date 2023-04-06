@@ -2,7 +2,7 @@ import openai
 import streamlit as st
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = st.secrets["CHAT_GPT_KEY"]
 
 # Define function to summarize a given review using OpenAI GPT-3
 def summarize_review(review_text):
